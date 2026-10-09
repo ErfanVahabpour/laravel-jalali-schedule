@@ -1,0 +1,58 @@
+{
+    "name": "erfanvahabpour/laravel-jalali-schedule",
+    "description": "Seamless Jalali (Solar Hijri) scheduling macros for Laravel tasks and console commands.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "schedule",
+        "scheduler",
+        "jalali",
+        "shamsi",
+        "solar-hijri",
+        "persian",
+        "verta",
+        "cron"
+    ],
+    "authors": [
+        {
+            "name": "Erfan Vahabpour",
+            "email": "erfanvahabpour@yahoo.com",
+            "homepage": "https://erfanvahabpour.ir/",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/ErfanVahabpour/laravel-jalali-schedule",
+    "require": {
+        "php": "^8.2",
+        "illuminate/console": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "hekmatinasser/verta": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EFive\\JalaliSchedule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EFive\\JalaliSchedule\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EFive\\JalaliSchedule\\JalaliScheduleServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
